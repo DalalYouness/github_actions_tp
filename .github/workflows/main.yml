@@ -1,14 +1,20 @@
-name: myworkflow
+name: myworkwolfow
+#trigger
+on:
+ push:
+   branches:
+     - main
 
-on: 
-  push:
-    branches:
-      - main
+#jobs or actions 
 jobs:
-  exemple-job:
+  job1:
     runs-on: ubuntu-latest
-     
     steps:
-     - name: Print a welcom message
-       run: echo "welcom github actions"
+      - name: printing hello word
+        run: echo "hi youness dalal"
+      - name: listing all files
+        run: ls -la
+        
+
+      
       
